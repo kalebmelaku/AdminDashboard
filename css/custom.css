@@ -5,7 +5,17 @@ nav#sidebar {
   position: sticky;
   top: 0;
 }
-
+/* .page-content{
+  background-color: rgb(245, 245, 245) !important;
+}
+.card, .navbar, #sidebar{
+  background-color: rgb(255, 255, 255) !important;
+  color: #000 !important;
+  border-color: #fff !important;
+}
+.navbar a, #sidebar a, .navbar strong{
+  color: #000 !important;
+} */
 .sidebar-link > span {
   font-size: 0.8rem;
 }
