@@ -1,0 +1,29 @@
+nav#sidebar {
+  min-width: 200px;
+  max-width: 200px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar-link > span {
+  font-size: 0.8rem;
+}
+
+.page-content.active {
+  width: 100%;
+}
+
+.direction-ltr {
+   direction: ltr; 
+}
+
+.direction-rtl {
+   direction: rtl; 
+}
+
+@media (max-width: 1200px) {
+  nav#sidebar {
+    min-width: 0;
+  }
+}/*# sourceMappingURL=custom.css.map */
