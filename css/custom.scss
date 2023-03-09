@@ -1,0 +1,37 @@
+$blue: #293b97;
+$orange: #f36c21;
+
+//Top Nav Colors
+.brand-big, .brand-sm{
+    strong{
+        color: $blue;
+        &:last-child{
+            color: $orange;
+        }
+    }
+}
+
+
+
+//Sidebar colors
+.sidebar-item.active>.sidebar-link {
+    background: #32353b;
+    border-left: 2px solid $orange;
+    color: #adb5bd;
+}
+
+.sidebar-item.active>.sidebar-link .svg-icon {
+    color: $orange;
+}
+
+.sidebar-item.active ul .sidebar-link {
+    border-left: 2px solid $orange;
+}
+
+.sidebar-item {
+    a:hover {
+        svg {
+            color: #fff !important;
+        }
+    }
+}

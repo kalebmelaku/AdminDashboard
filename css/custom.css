@@ -1,39 +1,24 @@
-nav#sidebar {
-  min-width: 200px;
-  max-width: 200px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+.brand-big strong, .brand-sm strong {
+  color: #293b97;
 }
-/* .page-content{
-  background-color: rgb(245, 245, 245) !important;
-}
-.card, .navbar, #sidebar{
-  background-color: rgb(255, 255, 255) !important;
-  color: #000 !important;
-  border-color: #fff !important;
-}
-.navbar a, #sidebar a, .navbar strong{
-  color: #000 !important;
-} */
-.sidebar-link > span {
-  font-size: 0.8rem;
+.brand-big strong:last-child, .brand-sm strong:last-child {
+  color: #f36c21;
 }
 
-.page-content.active {
-  width: 100%;
+.sidebar-item.active > .sidebar-link {
+  background: #32353b;
+  border-left: 2px solid #f36c21;
+  color: #adb5bd;
 }
 
-.direction-ltr {
-   direction: ltr; 
+.sidebar-item.active > .sidebar-link .svg-icon {
+  color: #f36c21;
 }
 
-.direction-rtl {
-   direction: rtl; 
+.sidebar-item.active ul .sidebar-link {
+  border-left: 2px solid #f36c21;
 }
 
-@media (max-width: 1200px) {
-  nav#sidebar {
-    min-width: 0;
-  }
+.sidebar-item a:hover svg {
+  color: #fff !important;
 }/*# sourceMappingURL=custom.css.map */
