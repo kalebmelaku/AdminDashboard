@@ -1,5 +1,4 @@
-$blue: #293b97;
-$orange: #f36c21;
+@import 'color_variables';
 
 //Top Nav Colors
 .brand-big, .brand-sm{
@@ -11,6 +10,14 @@ $orange: #f36c21;
     }
 }
 
+// direction
+.direction-ltr{
+    direction: ltr;
+}
+
+.direction-rtl {
+    direction: rtl ;
+}
 
 
 //Sidebar colors
@@ -31,7 +38,20 @@ $orange: #f36c21;
 .sidebar-item {
     a:hover {
         svg {
-            color: #fff !important;
+            color: $white !important;
         }
+    }
+}
+
+//card designs
+.card{
+    border-left: 3px solid $orange;
+}
+
+// dark/light switch
+.dark_light_switch{
+    img{
+        width: 130%;
+        cursor: pointer;
     }
 }

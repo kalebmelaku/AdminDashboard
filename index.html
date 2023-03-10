@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{App::getLocale()}}" dir="{{(App::isLocale('ar') ? 'rtl' : 'ltr')}}">
+<html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <!-- Choices.js-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="vendor/choices.js/public/assets/styles/choices.min.css">
   <!-- Google fonts - Muli-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,700">
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
   <!-- Custom stylesheet - for your changes-->
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/light_mode.css">
   <!-- Favicon-->
   <link rel="shortcut icon" href="img/favicon.ico">
   <!-- Tweaks for older IEs--><!--[if lt IE 9]>
@@ -26,7 +27,7 @@
 <body class="direction-ltr light">
   <header class="header">
     <nav class="navbar navbar-expand-lg bg-dash-dark-2 border-bottom border-dash-dark-1 z-index-10">
-      <div class="search-panel">
+      <!-- <div class="search-panel">
         <div class="search-inner d-flex align-items-center justify-content-center">
           <div class="close-btn d-flex align-items-center position-absolute top-0 end-0 me-4 mt-2 cursor-pointer">
             <span>Close </span>
@@ -36,7 +37,7 @@
           </div>
 
         </div>
-      </div>
+      </div> -->
       <div class="container-fluid d-flex align-items-center justify-content-between py-1">
         <div class="navbar-header d-flex align-items-center"><a class="navbar-brand text-uppercase text-reset"
             href="index.html">
@@ -48,6 +49,9 @@
               <use xlink:href="#arrow-left-1"> </use>
             </svg>
           </button>
+        </div>
+        <div class="dark_light_switch">
+          <img id="icon_switch" src="./img/icons/moon.png" alt="">
         </div>
       </div>
     </nav>
@@ -231,7 +235,7 @@
       </section>
 
 
-        <button onclick="changeDir()">Change</button>
+        <!-- <button onclick="changeDir()">Change</button> -->
 
     </div>
   </div>
@@ -274,6 +278,7 @@
   <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="./js/custom.js"></script>
 </body>
 
 </html>

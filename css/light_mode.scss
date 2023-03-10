@@ -1,0 +1,46 @@
+@import 'color_variables';
+.light {
+    .page-content {
+        background-color: $white !important;
+    }
+
+    .card,
+    #sidebar,
+    .navbar {
+        background-color: #fafafa !important;
+        border: none;
+        a {
+            color: #222;
+        }
+    }
+    .navbar{
+        border-bottom: 5px solid $blue !important;
+        border: none !important;
+        box-shadow: 1px 0 5px $blue;
+    }
+
+    .card {
+        border-left: 3px solid $blue;
+    }
+
+    #sidebar ul li.active {
+        background-color: $blue;
+    }
+
+    .sidebar-item.active>.sidebar-link {
+        background: $white;
+        border-left: 3px solid $orange;
+        color: #adb5bd;
+    }
+
+    .sidebar-item.active>.sidebar-link:hover {
+        background: $white !important;
+    }
+    .sidebar-link:hover {
+        background: $white;
+        // color: inherit;
+        svg{
+            color: #222 !important;
+        }
+      }
+}
