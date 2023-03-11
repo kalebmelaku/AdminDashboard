@@ -1,0 +1,47 @@
+.light {
+    display: none !important;
+    
+    .page-content {
+        background-color: #fff !important;
+    }
+
+    .card,
+    #sidebar,
+    .navbar {
+        background-color: #fafafa !important;
+        border: none;
+        a {
+            color: #222;
+        }
+    }
+    .navbar{
+        border-bottom: 5px solid $blue !important;
+        border: none !important;
+        box-shadow: 1px 0 5px $blue;
+    }
+
+    .card {
+        border-left: 3px solid $blue;
+    }
+
+    #sidebar ul li.active {
+        background-color: $blue;
+    }
+
+    .sidebar-item.active>.sidebar-link {
+        background: #fff;
+        border-left: 3px solid $orange;
+        color: #adb5bd;
+    }
+
+    .sidebar-item.active>.sidebar-link:hover {
+        background: #fff !important;
+    }
+    .sidebar-link:hover {
+        background: #fff;
+        // color: inherit;
+        svg{
+            color: #222 !important;
+        }
+      }
+}
