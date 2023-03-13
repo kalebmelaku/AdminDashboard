@@ -1,5 +1,5 @@
+@import 'color_variables';
 .light {
-    display: none !important;
     
     .page-content {
         background-color: #fff !important;
@@ -22,6 +22,9 @@
 
     .card {
         border-left: 3px solid $blue;
+        h1, h2, h3, h4, h5, h6, p{
+            color: #222 !important;
+        }
     }
 
     #sidebar ul li.active {
