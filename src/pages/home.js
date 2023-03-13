@@ -10,9 +10,6 @@ export default function Home() {
     const [darkMode, setDarkMode] = useState(false);
     useEffect(() => {
         return () => {
-            // "use strict";
-
-            document.addEventListener("DOMContentLoaded", function () {
                 // ------------------------------------------------------- //
                 // Sidebar Functionality
                 // ------------------------------------------------------ //
@@ -30,10 +27,6 @@ export default function Home() {
                         document.dispatchEvent(new Event("sidebarChanged"));
                     });
                 }
-
-
-            });
-
         };
     }, []);
     return (
