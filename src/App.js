@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import Dark from './img/icons/moon.png';
+// import Dark from './img/icons/moon.png';
 import MainComponent from './components/mainComponent';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faGrip, faChartLine, faClipboard, faLock, faMoon, faSun, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
@@ -9,7 +9,7 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
   useEffect(() => {
     return () => {
-      "use strict";
+      // "use strict";
 
 document.addEventListener("DOMContentLoaded", function () {
     // ------------------------------------------------------- //
@@ -29,21 +29,15 @@ document.addEventListener("DOMContentLoaded", function () {
             document.dispatchEvent(new Event("sidebarChanged"));
         });
     }
-    // ------------------------------------------------------- //
-    // Profile page choices
-    // ------------------------------------------------------ //
-    function injectClassess(x) {
-        let pickerCustomClass = x.dataset.customclass;
-        let pickerSevClasses = pickerCustomClass.split(" ");
-        x.parentElement.classList.add.apply(x.parentElement.classList, pickerSevClasses);
-    }
+
+
 });
 
     }
   }, [])
   
   return (
-    <div className={darkMode ? 'App' : 'light App'}>
+    <div className={darkMode ? 'App' : 'light App'} id={'app'}>
       <header className="header">
         <nav className="navbar navbar-expand-lg bg-dash-dark-2 border-bottom border-dash-dark-1 z-index-10">
 
@@ -57,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
               </a>
               <button className="sidebar-toggle">
                 <svg className="svg-icon svg-icon-sm svg-icon-heavy transform-none">
-                  {/* <use xlinkHref="#arrow-left-1"> </use> */}
                   <FontAwesomeIcon icon= {faArrowLeft}/>
                 </svg>
               </button>
@@ -69,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <div className="switch-checkbox">
                 <label className='switch'>
                   <input type="checkbox"
+                    id='icon'
                     checked={darkMode}
                     onChange={() => setDarkMode(!darkMode)}
                   />
@@ -90,28 +84,23 @@ document.addEventListener("DOMContentLoaded", function () {
           <ul className="list-unstyled">
             <li className="sidebar-item active"><a className="sidebar-link" href="index.html">
               <svg className="svg-icon svg-icon-sm svg-icon-heavy">
-                {/* <use xlinkHref="#real-estate-1"> </use> */}
                 <FontAwesomeIcon icon={faHouse} />
               </svg><span>Home </span></a></li>
             <li className="sidebar-item"><a className="sidebar-link" href="tables.html">
               <svg className="svg-icon svg-icon-sm svg-icon-heavy">
-                {/* <use xlinkHref="#portfolio-grid-1"> </use> */}
                 <FontAwesomeIcon icon={faGrip} />
               </svg><span>Tables </span></a></li>
             <li className="sidebar-item"><a className="sidebar-link" href="charts.html">
               <svg className="svg-icon svg-icon-sm svg-icon-heavy">
-                {/* <use xlinkHref="#sales-up-1"> </use> */}
                 <FontAwesomeIcon icon={faChartLine} />
               </svg><span>Charts </span></a></li>
             <li className="sidebar-item"><a className="sidebar-link" href="forms.html">
               <svg className="svg-icon svg-icon-sm svg-icon-heavy">
-                {/* <use xlinkHref="#survey-1"> </use> */}
                 <FontAwesomeIcon icon={faClipboard} />
               </svg><span>Forms </span></a></li>
 
             <li className="sidebar-item"><a className="sidebar-link" href="login.html">
               <svg className="svg-icon svg-icon-sm svg-icon-heavy">
-                {/* <use xlinkHref="#disable-1"> </use> */}
                 <FontAwesomeIcon icon={faLock} />
               </svg><span>Login page </span></a></li>
           </ul>
@@ -125,17 +114,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 );
 }
-const icon = document.getElementById('icon_switch');
-document.addEventListener("DOMContentLoaded", () => {
-  let status = sessionStorage.getItem("colorMode");
-  // document.body.classList.remove('')
-  console.log(icon);
-  if (status === 'dark') {
-    document.body.classList.remove('light');
-    icon.src = '../img/icons/sun.png';
-  } else {
-    document.body.classList.add(status);
-  }
-});
 
 export default App;

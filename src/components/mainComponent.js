@@ -16,7 +16,7 @@ class MainComponent extends React.Component {
                             <div className="card card-custom mb-0">
                                 <div className="card-body">
                                     <div className="card-title">
-                                        <h5 className="text-left mb-3"></h5>
+                                        {/* <h5 className="text-left mb-3"></h5> */}
                                         <div className="row">
                                             <div className="col">
                                                 <p></p>
@@ -49,7 +49,7 @@ class MainComponent extends React.Component {
                             <div className="card card-custom mb-0">
                                 <div className="card-body">
                                     <div className="card-title">
-                                        <h5 className="text-left mb-3"></h5>
+                                        {/* <h5 className="text-left mb-3"></h5> */}
                                         <div className="row">
                                             <div className="col">
                                                 <p></p>
@@ -82,7 +82,7 @@ class MainComponent extends React.Component {
                             <div className="card card-custom mb-0">
                                 <div className="card-body">
                                     <div className="card-title">
-                                        <h5 className="text-left mb-3"></h5>
+                                        {/* <h5 className="text-left mb-3"></h5> */}
                                         <div className="row">
                                             <div className="col">
                                                 <p></p>
@@ -115,7 +115,7 @@ class MainComponent extends React.Component {
                             <div className="card card-custom mb-0">
                                 <div className="card-body">
                                     <div className="card-title">
-                                        <h5 className="text-left mb-3"></h5>
+                                        {/* <h5 className="text-left mb-3"></h5> */}
                                         <div className="row">
                                             <div className="col">
                                                 <p></p>
